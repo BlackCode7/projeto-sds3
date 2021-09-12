@@ -1,10 +1,14 @@
 https://github.com/devsuperior/sds3/tree/main/episodio1
 https://github.com/devsuperior/sds4/tree/main/episodio2
+https://github.com/devsuperior/sds3/tree/main/episodio3
 
 PÁGINAS DE REFERENCIAL
 https://getbootstrap.com/docs/3.3/components/
 https://apexcharts.com/
 https://apexcharts.com/docs/react-charts
+https://www.convertte.com.br/gerador-link-whatsapp/
+https://app.netlify.com/sites/devvendas-anderson/deploys
+
 
 
 deu erro na instalação do bootstrap
