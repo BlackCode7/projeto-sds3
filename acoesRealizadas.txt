@@ -1,0 +1,6 @@
+https://github.com/devsuperior/sds3/tree/main/episodio1
+https://github.com/devsuperior/sds4/tree/main/episodio2
+
+deu erro na instalação do bootstrap
+comando >>> yarn add bootstrap
+parei no minuto >>> 51:17
