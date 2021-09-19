@@ -9,8 +9,16 @@ https://apexcharts.com/docs/react-charts
 https://www.convertte.com.br/gerador-link-whatsapp/
 https://app.netlify.com/sites/devvendas-anderson/deploys
 
+CONFIGURACAO DO BANCO H2
+minuto tempo do vídeo >>> 20:00min =>>> configurar para trabalhar com mysql
+
 
 
 deu erro na instalação do bootstrap
 comando >>> yarn add bootstrap
 parei no minuto >>> 51:17
+
+
+parei no video 2
+https://github.com/devsuperior/sds4/tree/main/episodio2
+parei no minuto >>> 38:41min
