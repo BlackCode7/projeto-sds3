@@ -1,3 +1,10 @@
+LINKS ONDE A APLICAÇÂO ESTA
+https://devvendas-anderson.netlify.app/ -> frontend 
+https://sds3anderson.herokuapp.com/ -> backend
+https://github.com/BlackCode7/projeto-sds3 -> repositório
+
+
+INSTRUÇÕES DO CURSO
 https://github.com/devsuperior/sds3/tree/main/episodio1
 https://github.com/devsuperior/sds4/tree/main/episodio2
 https://github.com/devsuperior/sds3/tree/main/episodio3
@@ -12,12 +19,9 @@ https://app.netlify.com/sites/devvendas-anderson/deploys
 CONFIGURACAO DO BANCO H2
 minuto tempo do vídeo >>> 20:00min =>>> configurar para trabalhar com mysql
 
-
-
 deu erro na instalação do bootstrap
 comando >>> yarn add bootstrap
 parei no minuto >>> 51:17
-
 
 parei no video 2
 https://github.com/devsuperior/sds4/tree/main/episodio2
