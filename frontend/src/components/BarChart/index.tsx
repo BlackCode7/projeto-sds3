@@ -1,8 +1,7 @@
 import axios from "axios";
-import { type } from "os";
 import { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
-import { SaleSSum, SaleSuccess } from "types/sale";
+import { SaleSuccess } from "types/sale";
 import { round } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
@@ -19,6 +18,7 @@ type ChartData = {
 };
 
 const BarChart = () => {
+
   const [chartData, setChartData] = useState<ChartData>({
     labels: {
       categories: [],
@@ -27,8 +27,8 @@ const BarChart = () => {
       {
         name: "",
         data: [],
-      },
-    ],
+      }
+    ]
   });
 
   //UseEffects react - controla as chamadas do useState
@@ -52,7 +52,7 @@ const BarChart = () => {
             },
           ],
        });
-      //console.log(chartData);
+     
     });
   }, []);
 

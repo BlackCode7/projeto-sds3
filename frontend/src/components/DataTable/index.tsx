@@ -6,7 +6,8 @@ import { BASE_URL } from "utils/requests";
 
 const DataTable = () => {
 
-    //Axios para chamar os dados 
+    //Axios para chamar os dados volta todos os objetos
+    // da página
     const [ page, setPage ] = useState<SalePage>({
         first: true,
         last: true,
@@ -17,7 +18,7 @@ const DataTable = () => {
 
     //useEffect pra chamar a api
     useEffect(() => {
-        axios.get(`${ BASE_URL }/sales?page=0&size=20&sort=date.desc`)
+        axios.get(`${ BASE_URL }/sales?page=0&size=20&sort=date,desc`)
         .then(response => {
             // aqui ele pega na API e joga no template
             setPage(response.data);
