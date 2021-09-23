@@ -18,7 +18,6 @@ type ChartData = {
 };
 
 const BarChart = () => {
-
   const [chartData, setChartData] = useState<ChartData>({
     labels: {
       categories: [],
@@ -27,8 +26,8 @@ const BarChart = () => {
       {
         name: "",
         data: [],
-      }
-    ]
+      },
+    ],
   });
 
   //UseEffects react - controla as chamadas do useState
@@ -39,20 +38,19 @@ const BarChart = () => {
       // convertend os dados para o tipo gráfico
       const data = response.data as SaleSuccess[];
       const myLabels = data.map((x) => x.sellerName);
-      const mySeries = data.map((x) => round(100.0 * x.deals / x.visited, 1));
+      const mySeries = data.map((x) => round((100.0 * x.deals) / x.visited, 1));
 
-      setChartData({ 
+      setChartData({
         labels: {
-            categories: myLabels,
+          categories: myLabels,
+        },
+        series: [
+          {
+            name: "% Sucesso",
+            data: mySeries,
           },
-          series: [
-            {
-              name: "% Sucesso",
-              data: mySeries,
-            },
-          ],
-       });
-     
+        ],
+      });
     });
   }, []);
 

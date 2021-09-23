@@ -1,15 +1,11 @@
-import BarChart from 'components/BarChart';
-import DataTable from 'components/DataTable';
-import DonutChart from 'components/DonutChart';
-import React from 'react';
-import Routes from 'Routes';
-
+import BarChart from "components/BarChart";
+import DataTable from "components/DataTable";
+import DonutChart from "components/DonutChart";
+import React from "react";
+import Routes from "Routes";
 
 function App() {
-  // criando aqui as rotas
-  return (
-     <Routes />   
-  );
+  return <Routes />;
 }
 
 export default App;

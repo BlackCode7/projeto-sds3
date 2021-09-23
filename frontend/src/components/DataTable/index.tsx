@@ -6,11 +6,7 @@ import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
 const DataTable = () => {
-  //variável da paginação
   const [activePage, setActivePage] = useState(0);
-
-  //Axios para chamar os dados volta todos os objetos
-  // da página
   const [page, setPage] = useState<SalePage>({
     first: true,
     last: true,
@@ -19,17 +15,14 @@ const DataTable = () => {
     totalPages: 0,
   });
 
-  //useEffect pra chamar a api
   useEffect(() => {
     axios
       .get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
       .then((response) => {
-        // aqui ele pega na API e joga no template
         setPage(response.data);
       });
   }, [activePage]);
 
-  //função para paginação
   const changePage = (index: number) => {
     setActivePage(index);
   };
